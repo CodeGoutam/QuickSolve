@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.quicksolve">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuickSolve"
+        tools:targetApi="31">
+        <activity
+            android:name=".speed"
+            android:exported="false" />
+        <activity
+            android:name=".Mass"
+            android:exported="false" />
+        <activity
+            android:name=".volume"
+            android:exported="false" />
+        <activity
+            android:name=".temp"
+            android:exported="false" />
+        <activity
+            android:name=".area"
+            android:exported="false" />
+        <activity
+            android:name=".length1"
+            android:exported="false" />
+        <activity
+            android:name=".length"
+            android:exported="false" />
+        <activity
+            android:name=".unitconverter"
+            android:exported="false"
+            android:label="Unit Converter" />
+        <activity
+            android:name=".IndexActivity"
+            android:exported="false"
+            android:label="Index" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.QuickSolve">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

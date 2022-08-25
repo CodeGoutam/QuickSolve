@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Quick Solve</string>
+    <string name="length">LENGTH</string>
+    <string name="todo">TODO</string>
+    <string name="area">AREA</string>
+    <string name="jm">TODO</string>
+    <string name="jn">TODO</string>
+    <string name="kl">LENGTH</string>
+    <string name="kj">TODO</string>
+    <string name="temperature">TEMPERATURE</string>
+    <string name="doo">TODO</string>
+    <string name="volume">VOLUME</string>
+    <string name="mass">MASS</string>
+    <string name="speed">SPEED</string>
+    <string name="hj">TODO</string>
+    <string name="mk">TODO</string>
+    <string name="h">volume</string>
+    <string name="kk">TODO</string>
+</resources>
