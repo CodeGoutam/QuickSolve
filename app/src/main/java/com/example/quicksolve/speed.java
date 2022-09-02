@@ -25,16 +25,16 @@ public class speed extends AppCompatActivity {
         setContentView(R.layout.activity_speed);
 
 
-        mph=findViewById(R.id.mph);
-        kph=findViewById(R.id.kph);
-       fps=findViewById(R.id.fps);
-        mps=findViewById(R.id.mps);
+        mph=findViewById(R.id.mile);
+        kph=findViewById(R.id.cm);
+       fps=findViewById(R.id.foot);
+        mps=findViewById(R.id.millimeter);
 
 
-        mphbtn=findViewById(R.id.mphbtn);
-        kphbtn=findViewById(R.id.kphbtn);
-        fpsbtn=findViewById(R.id.fpsbtn);
-       mpsbtn=findViewById(R.id.mpsbtn);
+        mphbtn=findViewById(R.id.micrometerbtn);
+        kphbtn=findViewById(R.id.cmbtn);
+        fpsbtn=findViewById(R.id.meterbtn);
+       mpsbtn=findViewById(R.id.meterbtn);
 
 
         //one

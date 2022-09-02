@@ -8,101 +8,86 @@
     tools:context=".length1">
 
     <LinearLayout
-        android:layout_width="154dp"
-        android:layout_height="390dp"
-        android:layout_marginEnd="220dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542">
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
 
         <EditText
-            android:id="@+id/mph"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#220606"
+            android:id="@+id/mile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:ems="10"
             android:hint="mile/hour"
-            android:inputType="textPersonName"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/micrometerbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="convert"
+            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/kph"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#220606"
+            android:id="@+id/cm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:ems="10"
             android:hint="kilometer/hour"
             android:inputType="textPersonName" />
 
-        <EditText
-            android:id="@+id/fps"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#220606"
-            android:ems="10"
-            android:hint="foot/second"
-            android:inputType="textPersonName" />
+        <Button
+            android:id="@+id/cmbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="convert"
+            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/mps"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#220606"
+            android:id="@+id/millimeter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:ems="10"
             android:hint="meter/second"
             android:inputType="textPersonName" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="184dp"
-        android:layout_height="382dp"
-        android:layout_marginLeft="20dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.876"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.584">
-
         <Button
-            android:id="@+id/mphbtn"
+            android:id="@+id/meterbtn"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:text="convert"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/kphbtn"
+        <EditText
+            android:id="@+id/foot"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="foot/second"
+            android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/fpsbtn"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:text="convert"
             android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/mpsbtn"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold" />
-
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

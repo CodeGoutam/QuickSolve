@@ -35,32 +35,32 @@ public class length1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_length1);
 
-        cm=findViewById(R.id.mph);
-        meter=findViewById(R.id.kph);
-        km=findViewById(R.id.fps);
-        inch=findViewById(R.id.pg);
-        millimeter=findViewById(R.id.mps);
-        foot=findViewById(R.id.mg);
-        yard=findViewById(R.id.p);
-        mile=findViewById(R.id.g);
+        cm=findViewById(R.id.cm);
+        meter=findViewById(R.id.meter);
+        km=findViewById(R.id.km);
+        inch=findViewById(R.id.inch);
+        millimeter=findViewById(R.id.millimeter);
+        foot=findViewById(R.id.foot);
+        yard=findViewById(R.id.yard);
+        mile=findViewById(R.id.mile);
         nanometer=findViewById(R.id.nanometer);
         micrometer=findViewById(R.id.micrometer);
 
-        cmbtn=findViewById(R.id.mphbtn);
-        meterbtn=findViewById(R.id.kphbtn);
-        kmbtn=findViewById(R.id.fpsbtn);
-        inchbtn=findViewById(R.id.mpsbtn);
-        millimeterbtn=findViewById(R.id.kgbtn);
-        footbtn=findViewById(R.id.mgbtn);
-        yardbtn=findViewById(R.id.pbtn);
-        milebtn=findViewById(R.id.gbtn);
+        cmbtn=findViewById(R.id.cmbtn);
+        meterbtn=findViewById(R.id.meterbtn);
+        kmbtn=findViewById(R.id.kmbtn);
+        inchbtn=findViewById(R.id.inchbtn);
+        millimeterbtn=findViewById(R.id.millimeterbtn);
+        footbtn=findViewById(R.id.footbtn);
+        yardbtn=findViewById(R.id.yardbtn);
+        milebtn=findViewById(R.id.milebtn);
         nanometerbtn=findViewById(R.id.nanometerbtn);
         micrometerbtn=findViewById(R.id.micrometerbtn);
 
         cmbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String onein=cm.getText().toString();
+                String onein= cm.getText().toString();
 
 //one1
                 double onevar=Double.parseDouble(onein);

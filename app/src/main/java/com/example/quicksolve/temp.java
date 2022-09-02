@@ -27,15 +27,15 @@ public class temp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_temp);
 
-        k=findViewById(R.id.mph);
-        f=findViewById(R.id.kph);
-        c=findViewById(R.id.fps);
-        r=findViewById(R.id.mps);
+        k=findViewById(R.id.mile);
+        f=findViewById(R.id.cm);
+        c=findViewById(R.id.foot);
+        r=findViewById(R.id.millimeter);
 
-        kbtn=findViewById(R.id.mphbtn);
-        fbtn=findViewById(R.id.kphbtn);
-        cbtn=findViewById(R.id.fpsbtn);
-        rbtn=findViewById(R.id.mpsbtn);
+        kbtn=findViewById(R.id.micrometerbtn);
+        fbtn=findViewById(R.id.cmbtn);
+        cbtn=findViewById(R.id.cbtn);
+        rbtn=findViewById(R.id.rbtn);
 
         //one
         kbtn.setOnClickListener(new View.OnClickListener() {

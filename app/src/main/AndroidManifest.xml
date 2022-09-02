@@ -14,37 +14,47 @@
         android:theme="@style/Theme.QuickSolve"
         tools:targetApi="31">
         <activity
+         android:parentActivityName=".unitconverter"
             android:name=".speed"
             android:exported="false" />
         <activity
             android:name=".Mass"
+            android:parentActivityName=".unitconverter"
             android:exported="false" />
         <activity
             android:name=".volume"
+            android:parentActivityName=".unitconverter"
             android:exported="false" />
         <activity
             android:name=".temp"
+            android:parentActivityName=".unitconverter"
             android:exported="false" />
         <activity
             android:name=".area"
+            android:parentActivityName=".unitconverter"
             android:exported="false" />
         <activity
             android:name=".length1"
+            android:parentActivityName=".unitconverter"
             android:exported="false" />
         <activity
             android:name=".length"
+            android:parentActivityName=".unitconverter"
             android:exported="false" />
         <activity
             android:name=".unitconverter"
             android:exported="false"
+
             android:label="Unit Converter" />
         <activity
             android:name=".IndexActivity"
             android:exported="false"
+            android:parentActivityName=".unitconverter"
             android:label="Index" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
+            android:parentActivityName=".unitconverter"
             android:theme="@style/Theme.QuickSolve">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

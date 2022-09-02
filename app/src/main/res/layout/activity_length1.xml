@@ -7,203 +7,232 @@
     android:background="#F2E5B4"
     tools:context=".length1">
 
-    <LinearLayout
-        android:layout_width="205dp"
-        android:layout_height="731dp"
-        android:layout_marginEnd="192dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.058">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/mph"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#220606"
-            android:ems="10"
-            android:hint="cm"
-            android:inputType="textPersonName"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/kph"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#220606"
-            android:ems="10"
-            android:hint="meter"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/fps"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#220606"
-            android:ems="10"
-            android:hint="kilometer"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/pg"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#220606"
-            android:ems="10"
-            android:hint="inch"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/mps"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#220606"
-            android:ems="10"
-            android:hint="millimeter"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/mg"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#220606"
-            android:ems="10"
-            android:hint="foot"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/p"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#220606"
-            android:ems="10"
-            android:hint="yard"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/g"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#220606"
-            android:ems="10"
-            android:hint="mile"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/nanometer"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#220606"
-            android:ems="10"
-            android:hint="nanometer"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/micrometer"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#220606"
-            android:ems="10"
-            android:hint="micrometer"
-            android:inputType="textPersonName" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="178dp"
-        android:layout_height="694dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.931"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.432">
-
-        <Button
-            android:id="@+id/mphbtn"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/kphbtn"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold" />
+            <EditText
+                android:id="@+id/cm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#220606"
+                android:ems="10"
+                android:hint="centimeter"
+                android:inputType="textPersonName" />
 
-        <Button
-            android:id="@+id/fpsbtn"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold" />
+            <Button
+                android:id="@+id/cmbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="convert"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/mpsbtn"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold" />
+            <EditText
+                android:id="@+id/meter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#220606"
+                android:ems="10"
+                android:hint="meter"
+                android:inputType="textPersonName" />
 
-        <Button
-            android:id="@+id/kgbtn"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold" />
+            <Button
+                android:id="@+id/meterbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="convert"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/mgbtn"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold" />
+            <EditText
+                android:id="@+id/km"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#220606"
+                android:ems="10"
+                android:hint="kilometer"
+                android:inputType="textPersonName" />
 
-        <Button
-            android:id="@+id/pbtn"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/kmbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="convert"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/gbtn"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold" />
+            <EditText
+                android:id="@+id/inch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#220606"
+                android:ems="10"
+                android:hint="inch"
+                android:inputType="textPersonName" />
 
-        <Button
-            android:id="@+id/nanometerbtn"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold" />
+            <Button
+                android:id="@+id/inchbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="convert"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/micrometerbtn"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold" />
+            <EditText
+                android:id="@+id/millimeter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#220606"
+                android:ems="10"
+                android:hint="millimeter"
+                android:inputType="textPersonName" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/millimeterbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="convert" />
+
+            <EditText
+                android:id="@+id/foot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#220606"
+                android:ems="10"
+                android:hint="foot"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/footbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="convert"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/yard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:hint="yard"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/yardbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Convert"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/mile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#220606"
+                android:ems="10"
+                android:hint="mile"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/milebtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="convert"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nanometer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:hint="nanometer"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/nanometerbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="convert"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/micrometer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#220606"
+                android:ems="10"
+                android:hint="micrometer"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/micrometerbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="convert"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

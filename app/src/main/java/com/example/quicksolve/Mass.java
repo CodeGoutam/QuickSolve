@@ -11,21 +11,21 @@ public class Mass extends AppCompatActivity {
 
     private EditText milligram;
     private EditText microgram;
-    private EditText ng;
-    private EditText pg;
-    private EditText kg;
-    private EditText mg;
-    private EditText p;
-    private EditText g;
+    private EditText nanogram;
+    private EditText picogram;
+    private EditText kilogram;
+    private EditText megagram;
+    private EditText pound;
+    private EditText gram;
 
     private Button milligrambtn;
     private Button microgrambtn;
-    private Button ngbtn;
-    private Button pgbtn;
-    private Button kgbtn;
-    private Button mgbtn;
-    private Button pbtn;
-    private Button gbtn;
+    private Button nanogrambtn;
+    private Button picogrambtn;
+    private Button kilogrambtn;
+    private Button megagrambtn;
+    private Button poundbtn;
+    private Button grambtn;
 
 
 
@@ -34,23 +34,23 @@ public class Mass extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mass);
 
-        milligram=findViewById(R.id.mph);
-        microgram=findViewById(R.id.kph);
-        ng=findViewById(R.id.fps);
-       pg=findViewById(R.id.pg);
-        kg=findViewById(R.id.mps);
-        mg=findViewById(R.id.mg);
-        p=findViewById(R.id.p);
-        g=findViewById(R.id.g);
+        milligram=findViewById(R.id.mile);
+        microgram=findViewById(R.id.cm);
+        nanogram=findViewById(R.id.foot);
+       picogram=findViewById(R.id.picogram);
+        kilogram=findViewById(R.id.kilogram);
+        megagram=findViewById(R.id.megagram);
+        pound=findViewById(R.id.pound);
+        gram=findViewById(R.id.gram);
 
-        milligrambtn=findViewById(R.id.mphbtn);
-        microgrambtn=findViewById(R.id.kphbtn);
-        ngbtn=findViewById(R.id.fpsbtn);
-        pgbtn=findViewById(R.id.mpsbtn);
-        kgbtn=findViewById(R.id.kgbtn);
-        mgbtn=findViewById(R.id.mgbtn);
-        pbtn=findViewById(R.id.pbtn);
-        gbtn=findViewById(R.id.gbtn);
+        milligrambtn=findViewById(R.id.micrometerbtn);
+        microgrambtn=findViewById(R.id.cmbtn);
+        nanogrambtn=findViewById(R.id.nanogrambtn);
+        picogrambtn=findViewById(R.id.picogrambtn);
+        kilogrambtn=findViewById(R.id.kilogrambtn);
+        megagrambtn=findViewById(R.id.megagrambtn);
+        poundbtn=findViewById(R.id.poundbtn);
+        grambtn=findViewById(R.id.grambtn);
 
         //one
         milligrambtn.setOnClickListener(new View.OnClickListener() {
@@ -68,27 +68,27 @@ public class Mass extends AppCompatActivity {
 
                 //nanogram  3
                 double threesol=onevar*1000000;
-                ng.setText(""+threesol+" "+"nanogram");
+                nanogram.setText(""+threesol+" "+"nanogram");
 
                 //picogram   4
                 double foursol=onevar*1000000000;
-                pg.setText(""+foursol+" "+"picogram");
+                picogram.setText(""+foursol+" "+"picogram");
 
                 //kilogram  5
                 double fivesol=onevar*0.000001;
-                kg.setText(""+fivesol+" "+"kilogram");
+                kilogram.setText(""+fivesol+" "+"kilogram");
 
                 //megagram   6
                 double sixsol=onevar*0.000000001;
-                mg.setText(""+sixsol+" "+"megagram");
+                megagram.setText(""+sixsol+" "+"megagram");
 
                 //pound    7
                 double sevensol=onevar*0.0000022;
-                p.setText(""+sevensol+" "+"pound");
+                pound.setText(""+sevensol+" "+"pound");
 
                 //gram    8
                 double eightsol=onevar*0.001;
-               g.setText(""+eightsol+" "+"gram");
+               gram.setText(""+eightsol+" "+"gram");
             }
         });
 
@@ -110,37 +110,37 @@ public class Mass extends AppCompatActivity {
 
                 //nanogram  3
                 double threesol=onevar*1000;
-                ng.setText(""+threesol+" "+"nanogram");
+                nanogram.setText(""+threesol+" "+"nanogram");
 
                 //picogram   4
                 double foursol=onevar*1000000;
-                pg.setText(""+foursol+" "+"picogram");
+                picogram.setText(""+foursol+" "+"picogram");
 
                 //kilogram  5
                 double fivesol=onevar*0.000000001;
-                kg.setText(""+fivesol+" "+"kilogram");
+                kilogram.setText(""+fivesol+" "+"kilogram");
 
                 //megagram   6
                 double sixsol=onevar*0.000000000001;
-                mg.setText(""+sixsol+" "+"megagram");
+                megagram.setText(""+sixsol+" "+"megagram");
 
                 //pound    7
                 double sevensol=onevar*2.2046*0.000000001;
-                p.setText(""+sevensol+" "+"pound");
+                pound.setText(""+sevensol+" "+"pound");
 
                 //gram    8
                 double eightsol=onevar*0.000001;
-                g.setText(""+eightsol+" "+"gram");
+                gram.setText(""+eightsol+" "+"gram");
             }
         });
 
 
 
         //three
-        ngbtn.setOnClickListener(new View.OnClickListener() {
+        nanogrambtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String onein=ng.getText().toString();
+                String onein=nanogram.getText().toString();
                 double onevar=Double.parseDouble(onein);
                 //milligram    1
                 double onesol=onevar*0.000001;
@@ -152,36 +152,36 @@ public class Mass extends AppCompatActivity {
 
                 //nanogram  3
                 double threesol=onevar;
-                ng.setText(""+threesol+" "+"nanogram");
+                nanogram.setText(""+threesol+" "+"nanogram");
 
                 //picogram   4
                 double foursol=onevar*1000;
-                pg.setText(""+foursol+" "+"picogram");
+                picogram.setText(""+foursol+" "+"picogram");
 
                 //kilogram  5
                 double fivesol=onevar*0.000000000001;
-                kg.setText(""+fivesol+" "+"kilogram");
+                kilogram.setText(""+fivesol+" "+"kilogram");
 
                 //megagram   6
                 double sixsol=onevar*0.000000000000001;
-                mg.setText(""+sixsol+" "+"megagram");
+                megagram.setText(""+sixsol+" "+"megagram");
 
                 //pound    7
                 double sevensol=onevar*2.2046*0.000000000001;
-                p.setText(""+sevensol+" "+"pound");
+                pound.setText(""+sevensol+" "+"pound");
 
                 //gram    8
                 double eightsol=onevar*0.000000001;
-                g.setText(""+eightsol+" "+"gram");
+                gram.setText(""+eightsol+" "+"gram");
             }
         });
 
 
         //four
-        pgbtn.setOnClickListener(new View.OnClickListener() {
+        picogrambtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String onein=pg.getText().toString();
+                String onein=picogram.getText().toString();
                 double onevar=Double.parseDouble(onein);
                 //milligram    1
                 double onesol=onevar*0.000000001;
@@ -193,27 +193,27 @@ public class Mass extends AppCompatActivity {
 
                 //nanogram  3
                 double threesol=onevar*0.001;
-                ng.setText(""+threesol+" "+"nanogram");
+                nanogram.setText(""+threesol+" "+"nanogram");
 
                 //picogram   4
                 double foursol=onevar;
-                pg.setText(""+foursol+" "+"picogram");
+                picogram.setText(""+foursol+" "+"picogram");
 
                 //kilogram  5
                 double fivesol=onevar*0.000000000000001;
-                kg.setText(""+fivesol+" "+"kilogram");
+                kilogram.setText(""+fivesol+" "+"kilogram");
 
                 //megagram   6
                 double sixsol=onevar*0.000000000000000001;
-                mg.setText(""+sixsol+" "+"megagram");
+                megagram.setText(""+sixsol+" "+"megagram");
 
                 //pound    7
                 double sevensol=onevar*2.2046*0.000000000000001;
-                p.setText(""+sevensol+" "+"pound");
+                pound.setText(""+sevensol+" "+"pound");
 
                 //gram    8
                 double eightsol=onevar*0.000000000001;
-                g.setText(""+eightsol+" "+"gram");
+                gram.setText(""+eightsol+" "+"gram");
             }
         });
 
@@ -221,10 +221,10 @@ public class Mass extends AppCompatActivity {
 
 
         //five
-        kgbtn.setOnClickListener(new View.OnClickListener() {
+        kilogrambtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String onein=kg.getText().toString();
+                String onein=kilogram.getText().toString();
                 double onevar=Double.parseDouble(onein);
                 //milligram    1
                 double onesol=onevar*1000000;
@@ -236,37 +236,37 @@ public class Mass extends AppCompatActivity {
 
                 //nanogram  3
                 double threesol=onevar*100000000*10000;
-                ng.setText(""+threesol+" "+"nanogram");
+                nanogram.setText(""+threesol+" "+"nanogram");
 
                 //picogram   4
                 double foursol=onevar*1000000*10000*100000;
-                pg.setText(""+foursol+" "+"picogram");
+                picogram.setText(""+foursol+" "+"picogram");
 
                 //kilogram  5
                 double fivesol=onevar;
-                kg.setText(""+fivesol+" "+"kilogram");
+                kilogram.setText(""+fivesol+" "+"kilogram");
 
                 //megagram   6
                 double sixsol=onevar*0.001;
-                mg.setText(""+sixsol+" "+"megagram");
+                megagram.setText(""+sixsol+" "+"megagram");
 
                 //pound    7
                 double sevensol=onevar*2.20462262;
-                p.setText(""+sevensol+" "+"pound");
+                pound.setText(""+sevensol+" "+"pound");
 
                 //gram    8
                 double eightsol=onevar*1000;
-                g.setText(""+eightsol+" "+"gram");
+                gram.setText(""+eightsol+" "+"gram");
             }
         });
 
 
 
         //six
-        mgbtn.setOnClickListener(new View.OnClickListener() {
+        megagrambtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String onein=mg.getText().toString();
+                String onein=megagram.getText().toString();
                 double onevar=Double.parseDouble(onein);
                 //milligram    1
                 double onesol=onevar*1000000000;
@@ -278,37 +278,37 @@ public class Mass extends AppCompatActivity {
 
                 //nanogram  3
                 double threesol=onevar*1000000*1000000000;
-                ng.setText(""+threesol+" "+"nanogram");
+                nanogram.setText(""+threesol+" "+"nanogram");
 
                 //picogram   4
                 double foursol=onevar*1000000000*1000000000;
-                pg.setText(""+foursol+" "+"picogram");
+                picogram.setText(""+foursol+" "+"picogram");
 
                 //kilogram  5
                 double fivesol=onevar*1000;
-                kg.setText(""+fivesol+" "+"kilogram");
+                kilogram.setText(""+fivesol+" "+"kilogram");
 
                 //megagram   6
                 double sixsol=onevar;
-                mg.setText(""+sixsol+" "+"megagram");
+                megagram.setText(""+sixsol+" "+"megagram");
 
                 //pound    7
                 double sevensol=onevar*2204.62262;
-                p.setText(""+sevensol+" "+"pound");
+                pound.setText(""+sevensol+" "+"pound");
 
                 //gram    8
                 double eightsol=onevar*1000000;
-                g.setText(""+eightsol+" "+"gram");
+                gram.setText(""+eightsol+" "+"gram");
             }
         });
 
 
 
         //seven
-        pbtn.setOnClickListener(new View.OnClickListener() {
+        picogrambtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String onein=p.getText().toString();
+                String onein=picogram.getText().toString();
                 double onevar=Double.parseDouble(onein);
 
                 //milligram    1
@@ -321,36 +321,36 @@ public class Mass extends AppCompatActivity {
 
                 //nanogram  3
                 double threesol=onevar*4.5359*1000000*100000;
-                ng.setText(""+threesol+" "+"nanogram");
+                nanogram.setText(""+threesol+" "+"nanogram");
 
                 //picogram   4
                 double foursol=onevar*4.5359*10000000*10000000;
-                pg.setText(""+foursol+" "+"picogram");
+                picogram.setText(""+foursol+" "+"picogram");
 
                 //kilogram  5
                 double fivesol=onevar*0.45359237;
-                kg.setText(""+fivesol+" "+"kilogram");
+                kilogram.setText(""+fivesol+" "+"kilogram");
 
                 //megagram   6
                 double sixsol=onevar*0.00045359;
-                mg.setText(""+sixsol+" "+"megagram");
+                megagram.setText(""+sixsol+" "+"megagram");
 
                 //pound    7
                 double sevensol=onevar;
-                p.setText(""+sevensol+" "+"pound");
+                pound.setText(""+sevensol+" "+"pound");
 
                 //gram    8
                 double eightsol=onevar*453.59237;
-                g.setText(""+eightsol+" "+"gram");
+                gram.setText(""+eightsol+" "+"gram");
             }
         });
 
 
         //EIGHT
-        gbtn.setOnClickListener(new View.OnClickListener() {
+        grambtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String onein=g.getText().toString();
+                String onein=gram.getText().toString();
                 double onevar=Double.parseDouble(onein);
                 //milligram    1
                 double onesol=onevar*1000;
@@ -362,27 +362,27 @@ public class Mass extends AppCompatActivity {
 
                 //nanogram  3
                 double threesol=onevar*1000000000;
-                ng.setText(""+threesol+" "+"nanogram");
+                nanogram.setText(""+threesol+" "+"nanogram");
 
                 //picogram   4
                 double foursol=onevar*10000000*100000;
-                pg.setText(""+foursol+" "+"picogram");
+                picogram.setText(""+foursol+" "+"picogram");
 
                 //kilogram  5
                 double fivesol=onevar*0.001;
-                kg.setText(""+fivesol+" "+"kilogram");
+                kilogram.setText(""+fivesol+" "+"kilogram");
 
                 //megagram   6
                 double sixsol=onevar*0.000001;
-                mg.setText(""+sixsol+" "+"megagram");
+                megagram.setText(""+sixsol+" "+"megagram");
 
                 //pound    7
                 double sevensol=onevar*0.00220462;
-                p.setText(""+sevensol+" "+"pound");
+                pound.setText(""+sevensol+" "+"pound");
 
                 //gram    8
                 double eightsol=onevar*453.59237;
-                g.setText(""+eightsol+" "+"gram");
+                gram.setText(""+eightsol+" "+"gram");
             }
         });
 

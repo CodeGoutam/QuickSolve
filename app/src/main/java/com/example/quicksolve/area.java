@@ -24,17 +24,17 @@ public class area extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_area);
 
-        sqcm=findViewById(R.id.mph);
-        sqm=findViewById(R.id.kph);
-        sqkm=findViewById(R.id.fps);
-        sqmm=findViewById(R.id.mps);
-        h=findViewById(R.id.mg);
+        sqcm=findViewById(R.id.mile);
+        sqm=findViewById(R.id.foot);
+        sqkm=findViewById(R.id.millimeter);
+        sqmm=findViewById(R.id.cm);
+        h=findViewById(R.id.kmbtn);
 
-        sqcmbtn=findViewById(R.id.mphbtn);
-        sqmbtn=findViewById(R.id.kphbtn);
-        sqkmbtn=findViewById(R.id.fpsbtn);
-        sqmmbtn=findViewById(R.id.mpsbtn);
-        hbtn=findViewById(R.id.kgbtn);
+        sqcmbtn=findViewById(R.id.sqcmbtn);
+        sqmbtn=findViewById(R.id.meterbtn);
+        sqkmbtn=findViewById(R.id.micrometerbtn);
+        sqmmbtn=findViewById(R.id.cmbtn);
+        hbtn=findViewById(R.id.hbtn);
 
         //sqcmbtn one1
         sqcmbtn.setOnClickListener(new View.OnClickListener() {

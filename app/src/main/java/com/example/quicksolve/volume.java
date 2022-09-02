@@ -34,23 +34,23 @@ public class volume extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_volume);
 
-        ccm=findViewById(R.id.mph);
-        cm=findViewById(R.id.kph);
-        cdm=findViewById(R.id.fps);
-        ckm=findViewById(R.id.pg);
-        cinch=findViewById(R.id.mps);
-       cyard=findViewById(R.id.mg);
-        cmile=findViewById(R.id.p);
-        cfoot=findViewById(R.id.g);
+        ccm=findViewById(R.id.mile);
+        cm=findViewById(R.id.cm);
+        cdm=findViewById(R.id.foot);
+        ckm=findViewById(R.id.km);
+        cinch=findViewById(R.id.millimeter);
+       cyard=findViewById(R.id.kmbtn);
+        cmile=findViewById(R.id.meter);
+        cfoot=findViewById(R.id.km);
 
-        ccmbtn=findViewById(R.id.mphbtn);
-        cmbtn=findViewById(R.id.kphbtn);
-        cdmbtn=findViewById(R.id.fpsbtn);
-        ckmbtn=findViewById(R.id.mpsbtn);
-        cinchbtn=findViewById(R.id.kgbtn);
-        cyardbtn=findViewById(R.id.mgbtn);
-        cmilebtn=findViewById(R.id.pbtn);
-        cfootbtn=findViewById(R.id.gbtn);
+        ccmbtn=findViewById(R.id.micrometerbtn);
+        cmbtn=findViewById(R.id.cmbtn);
+        cdmbtn=findViewById(R.id.cdmbtn);
+        ckmbtn=findViewById(R.id.meterbtn);
+        cinchbtn=findViewById(R.id.cinchbtn);
+        cyardbtn=findViewById(R.id.cyardbtn);
+        cmilebtn=findViewById(R.id.milebtn);
+        cfootbtn=findViewById(R.id.footbtn);
 
         //one
         ccmbtn.setOnClickListener(new View.OnClickListener() {

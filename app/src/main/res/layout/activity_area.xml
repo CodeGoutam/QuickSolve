@@ -7,116 +7,96 @@
     android:background="#F2E5B4"
     tools:context=".length1">
 
-    <LinearLayout
-        android:layout_width="210dp"
-        android:layout_height="387dp"
-        android:layout_marginEnd="196dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/mph"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#220606"
-            android:ems="10"
-            android:hint=" square cm"
-            android:inputType="textPersonName"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/kph"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#0E0D0D"
-            android:ems="10"
-            android:hint="square meter"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/fps"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#0E0D0D"
-            android:ems="10"
-            android:hint="square kilometer"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/mps"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#0E0D0D"
-            android:ems="10"
-            android:hint="square millimeter"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/mg"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#0E0D0D"
-            android:ems="10"
-            android:hint="hectare"
-            android:inputType="textPersonName" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="184dp"
-        android:layout_height="382dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.458">
-
-        <Button
-            android:id="@+id/mphbtn"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/kphbtn"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold" />
+            <EditText
+                android:id="@+id/mile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#220606"
+                android:ems="10"
+                android:hint=" square cm"
+                android:inputType="textPersonName" />
 
-        <Button
-            android:id="@+id/fpsbtn"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold" />
+            <Button
+                android:id="@+id/sqcmbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="convert"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/mpsbtn"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold" />
+            <EditText
+                android:id="@+id/foot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#0E0D0D"
+                android:ems="10"
+                android:hint="square kilometer"
+                android:inputType="textPersonName" />
 
-        <Button
-            android:id="@+id/kgbtn"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_margin="7dp"
-            android:text="convert"
-            android:textStyle="bold" />
+            <Button
+                android:id="@+id/meterbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="convert"
+                android:textStyle="bold" />
 
-    </LinearLayout>
+            <EditText
+                android:id="@+id/millimeter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#0E0D0D"
+                android:ems="10"
+                android:hint="square millimeter"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/micrometerbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="convert"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/cm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#0E0D0D"
+                android:ems="10"
+                android:hint="square meter"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/cmbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="convert"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/kmbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#0E0D0D"
+                android:ems="10"
+                android:hint="hectare"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/hbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="convert"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
