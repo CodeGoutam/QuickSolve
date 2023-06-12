@@ -8,23 +8,23 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class volume extends AppCompatActivity {
-    private EditText ccm;
-    private EditText cm;
-    private EditText cdm;
-    private EditText ckm;
-    private EditText cinch;
-    private EditText cyard;
-    private EditText cmile;
-    private EditText cfoot;
+    private EditText cubicCentimeter;
+    private EditText cubicMile;
+    private EditText cubicMeter;
+    private EditText cubicDecimeter;
+    private EditText cubicKilometer;
+    private EditText cubicInch;
+    private EditText cubicYard;
+    private EditText cubicFoot;
 
-    private Button ccmbtn;
-    private Button cmbtn;
-    private Button cdmbtn;
-    private Button ckmbtn;
-    private Button cinchbtn;
-    private Button cyardbtn;
-    private Button cmilebtn;
-    private Button cfootbtn;
+    private Button cubicCentimeterBtn;
+    private Button cubicMeterBtn;
+    private Button cubicDecimeterBtn;
+    private Button cubicKilometerBtn;
+    private Button cubicInchBtn;
+    private Button cubicYardBtn;
+    private Button cubicMileBtn;
+    private Button cubicFootBtn;
 
 
 
@@ -34,348 +34,348 @@ public class volume extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_volume);
 
-        ccm=findViewById(R.id.mile);
-        cm=findViewById(R.id.cm);
-        cdm=findViewById(R.id.foot);
-        ckm=findViewById(R.id.km);
-        cinch=findViewById(R.id.millimeter);
-       cyard=findViewById(R.id.kmbtn);
-        cmile=findViewById(R.id.meter);
-        cfoot=findViewById(R.id.km);
+        cubicCentimeter=findViewById(R.id.cubicCentimeter);
+        cubicMile=findViewById(R.id.cubicMile);
+        cubicMeter=findViewById(R.id.cubicMeter);
+        cubicDecimeter=findViewById(R.id.cubicDecimeter);
+        cubicKilometer=findViewById(R.id.cubicKilometer);
+        cubicInch=findViewById(R.id.cubicInch);
+        cubicYard=findViewById(R.id.cubicYard);
+        cubicFoot=findViewById(R.id.cubicFoot);
 
-        ccmbtn=findViewById(R.id.micrometerbtn);
-        cmbtn=findViewById(R.id.cmbtn);
-        cdmbtn=findViewById(R.id.cdmbtn);
-        ckmbtn=findViewById(R.id.meterbtn);
-        cinchbtn=findViewById(R.id.cinchbtn);
-        cyardbtn=findViewById(R.id.cyardbtn);
-        cmilebtn=findViewById(R.id.milebtn);
-        cfootbtn=findViewById(R.id.footbtn);
+        cubicCentimeterBtn=findViewById(R.id.cubicCentimeterBtn);
+        cubicMileBtn=findViewById(R.id.cubicMileBtn);
+        cubicMeterBtn=findViewById(R.id.cubicMeterBtn);
+        cubicDecimeterBtn=findViewById(R.id.cubicDecimeterBtn);
+        cubicKilometerBtn=findViewById(R.id.cubicKilometerBtn);
+        cubicInchBtn=findViewById(R.id.cubicInchBtn);
+        cubicYardBtn=findViewById(R.id.cubicYardBtn);
+        cubicFootBtn=findViewById(R.id.cubicFootBtn);
 
         //one
-        ccmbtn.setOnClickListener(new View.OnClickListener() {
+        cubicCentimeterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String onein=ccm.getText().toString();
+                String onein=cubicCentimeter.getText().toString();
                 double onevar=Double.parseDouble(onein);
             //ccm    1
                 double onesol=onevar;
-                ccm.setText(""+onesol+" "+"cubic centimeter");
+                cubicCentimeter.setText(""+onesol+" ");
 
                 //cm    2
                 double twosol=onevar*0.000001;
-                cm.setText(""+twosol+" "+"cubic meter");
+                cubicMeter.setText(""+twosol+" ");
 
                 //cdm   3
                 double threesol=onevar*0.001;
-                cdm.setText(""+threesol+" "+"cubic decimeter");
+                cubicDecimeter.setText(""+threesol+" ");
 
                 //ckm    4
                 double foursol=onevar*0.000000000000001;
-                ckm.setText(""+foursol+" "+"cubic kilometer");
+                cubicKilometer.setText(""+foursol+" ");
 
                 //cinch   5
                 double fivesol=onevar*0.06102374;
-                cinch.setText(""+fivesol+" "+"cubic inch");
+                cubicInch.setText(""+fivesol+" ");
 
                 //cyard    6
                 double sixsol=onevar*0.00000131;
-                cyard.setText(""+sixsol+" "+"cubic yard");
+                cubicYard.setText(""+sixsol+" ");
 
                 //cmile    7
                 double sevensol=onevar*2.3991*0.0000000000000001;
-                cmile.setText(""+sevensol+" "+"cubic mile");
+                cubicMile.setText(""+sevensol+" ");
 
                 //cfoot    8
                 double eightsol=onevar*0.00003531;
-                cfoot.setText(""+eightsol+" "+"cubic foot");
+                cubicFoot.setText(""+eightsol+" ");
             }
         });
 
 
         //two
-        cmbtn.setOnClickListener(new View.OnClickListener() {
+        cubicMeterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String onein=cm.getText().toString();
+                String onein=cubicMeter.getText().toString();
                 double onevar=Double.parseDouble(onein);
                 //ccm    1
                 double onesol=onevar*1000000;
-                ccm.setText(""+onesol+" "+"cubic centimeter");
+                cubicCentimeter.setText(""+onesol+" ");
 
                 //cm    2
                 double twosol=onevar;
-                cm.setText(""+twosol+" "+"cubic meter");
+                cubicMeter.setText(""+twosol+" ");
 
                 //cdm   3
                 double threesol=onevar*1000;
-                cdm.setText(""+threesol+" "+"cubic decimeter");
+                cubicDecimeter.setText(""+threesol+" ");
 
                 //ckm    4
                 double foursol=onevar*0.000000001;
-                ckm.setText(""+foursol+" "+"cubic kilometer");
+                cubicKilometer.setText(""+foursol+" ");
 
                 //cinch   5
                 double fivesol=onevar*61023.7441;
-                cinch.setText(""+fivesol+" "+"cubic inch");
+                cubicInch.setText(""+fivesol+" ");
 
                 //cyard    6
                 double sixsol=onevar*1.30795062;
-                cyard.setText(""+sixsol+" "+"cubic yard");
+                cubicYard.setText(""+sixsol+" ");
 
                 //cmile    7
                 double sevensol=onevar*2.3991*0.0000000001;
-                cmile.setText(""+sevensol+" "+"cubic mile");
+                cubicMile.setText(""+sevensol+" ");
 
                 //cfoot    8
                 double eightsol=onevar*35.3146667;
-                cfoot.setText(""+eightsol+" "+"cubic foot");
+                cubicFoot.setText(""+eightsol+" ");
             }
         });
 
 
         //three
-        cdmbtn.setOnClickListener(new View.OnClickListener() {
+        cubicDecimeterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String onein=cdm.getText().toString();
+                String onein=cubicDecimeter.getText().toString();
                 double onevar=Double.parseDouble(onein);
                 //ccm    1
                 double onesol=onevar*1000;
-                ccm.setText(""+onesol+" "+"cubic centimeter");
+                cubicCentimeter.setText(""+onesol+" ");
 
                 //cm    2
                 double twosol=onevar*0.001;
-                cm.setText(""+twosol+" "+"cubic meter");
+                cubicMeter.setText(""+twosol+" ");
 
                 //cdm   3
                 double threesol=onevar;
-                cdm.setText(""+threesol+" "+"cubic decimeter");
+                cubicDecimeter.setText(""+threesol+" ");
 
                 //ckm    4
                 double foursol=onevar*0.000000000001;
-                ckm.setText(""+foursol+" "+"cubic kilometer");
+                cubicKilometer.setText(""+foursol+" ");
 
                 //cinch   5
                 double fivesol=onevar*61.0237441;
-                cinch.setText(""+fivesol+" "+"cubic inch");
+                cubicInch.setText(""+fivesol+" ");
 
                 //cyard    6
                 double sixsol=onevar*0.00130795;
-                cyard.setText(""+sixsol+" "+"cubic yard");
+                cubicYard.setText(""+sixsol+" ");
 
                 //cmile    7
                 double sevensol=onevar*2.3991*0.0000000000001;
-                cmile.setText(""+sevensol+" "+"cubic mile");
+                cubicMile.setText(""+sevensol+" ");
 
                 //cfoot    8
                 double eightsol=onevar*0.03531467;
-                cfoot.setText(""+eightsol+" "+"cubic foot");
+                cubicFoot.setText(""+eightsol+" ");
             }
         });
 
 
         //four
-        ckmbtn.setOnClickListener(new View.OnClickListener() {
+        cubicKilometerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String onein=ckm.getText().toString();
+                String onein=cubicKilometer.getText().toString();
                 double onevar=Double.parseDouble(onein);
                 //ccm    1
                 double onesol=onevar*100000000*100*100000;
-                ccm.setText(""+onesol+" "+"cubic centimeter");
+                cubicCentimeter.setText(""+onesol+" ");
 
                 //cm    2
                 double twosol=onevar*1000000000;
-                cm.setText(""+twosol+" "+"cubic meter");
+                cubicMeter.setText(""+twosol+" ");
 
                 //cdm   3
                 double threesol=onevar*1000000000*1000;
-                cdm.setText(""+threesol+" "+"cubic decimeter");
+                cubicDecimeter.setText(""+threesol+" ");
 
                 //ckm    4
                 double foursol=onevar;
-                ckm.setText(""+foursol+" "+"cubic kilometer");
+                cubicKilometer.setText(""+foursol+" ");
 
                 //cinch   5
                 double fivesol=onevar*6.1024*1000000000*100*100;
-                cinch.setText(""+fivesol+" "+"cubic inch");
+                cubicInch.setText(""+fivesol+" ");
 
                 //cyard    6
                 double sixsol=onevar*1.3080*1000000000;
-                cyard.setText(""+sixsol+" "+"cubic yard");
+                cubicYard.setText(""+sixsol+" ");
 
                 //cmile    7
                 double sevensol=onevar*0.23991276;
-                cmile.setText(""+sevensol+" "+"cubic mile");
+                cubicMile.setText(""+sevensol+" ");
 
                 //cfoot    8
                 double eightsol=onevar*3.5315*100000*100000;
-                cfoot.setText(""+eightsol+" "+"cubic foot");
+                cubicFoot.setText(""+eightsol+" ");
             }
         });
 
 
         //five
-        cinchbtn.setOnClickListener(new View.OnClickListener() {
+        cubicInchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String onein=cinch.getText().toString();
+                String onein=cubicInch.getText().toString();
                 double onevar=Double.parseDouble(onein);
                 //ccm    1
                 double onesol=onevar*16.387064;
-                ccm.setText(""+onesol+" "+"cubic centimeter");
+                cubicCentimeter.setText(""+onesol+" ");
 
                 //cm    2
                 double twosol=onevar*0.00001639;
-                cm.setText(""+twosol+" "+"cubic meter");
+                cubicMeter.setText(""+twosol+" ");
 
                 //cdm   3
                 double threesol=onevar*0.01638706;
-                cdm.setText(""+threesol+" "+"cubic decimeter");
+                cubicDecimeter.setText(""+threesol+" ");
 
                 //ckm    4
                 double foursol=onevar*1.6387*0.00000000000001;
-                ckm.setText(""+foursol+" "+"cubic kilometer");
+                cubicKilometer.setText(""+foursol+" ");
 
                 //cinch   5
                 double fivesol=onevar;
-                cinch.setText(""+fivesol+" "+"cubic inch");
+                cubicInch.setText(""+fivesol+" ");
 
                 //cyard    6
                 double sixsol=onevar*0.00002143;
-                cyard.setText(""+sixsol+" "+"cubic yard");
+                cubicYard.setText(""+sixsol+" ");
 
                 //cmile    7
                 double sevensol=onevar*3.9315*0.000000000000001;
-                cmile.setText(""+sevensol+" "+"cubic mile");
+                cubicMile.setText(""+sevensol+" ");
 
                 //cfoot    8
                 double eightsol=onevar*0.0005787;
-                cfoot.setText(""+eightsol+" "+"cubic foot");
+                cubicFoot.setText(""+eightsol+" ");
             }
         });
 
 
         //six
-        cyardbtn.setOnClickListener(new View.OnClickListener() {
+        cubicYardBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String onein=cyard.getText().toString();
+                String onein=cubicYard.getText().toString();
                 double onevar=Double.parseDouble(onein);
                 //ccm    1
                 double onesol=onevar*764554.858;
-                ccm.setText(""+onesol+" "+"cubic centimeter");
+                cubicCentimeter.setText(""+onesol+" ");
 
                 //cm    2
                 double twosol=onevar*0.76455486;
-                cm.setText(""+twosol+" "+"cubic meter");
+                cubicMeter.setText(""+twosol+" ");
 
                 //cdm   3
                 double threesol=onevar*764.554858;
-                cdm.setText(""+threesol+" "+"cubic decimeter");
+                cubicDecimeter.setText(""+threesol+" ");
 
                 //ckm    4
                 double foursol=onevar*7.6455*0.0000000001;
-                ckm.setText(""+foursol+" "+"cubic kilometer");
+                cubicKilometer.setText(""+foursol+" ");
 
                 //cinch   5
                 double fivesol=onevar*46656;
-                cinch.setText(""+fivesol+" "+"cubic inch");
+                cubicInch.setText(""+fivesol+" ");
 
                 //cyard    6
                 double sixsol=onevar;
-                cyard.setText(""+sixsol+" "+"cubic yard");
+                cubicYard.setText(""+sixsol+" ");
 
                 //cmile    7
                 double sevensol=onevar*1.8343*0.0000000001;
-                cmile.setText(""+sevensol+" "+"cubic mile");
+                cubicMile.setText(""+sevensol+" ");
 
                 //cfoot    8
                 double eightsol=onevar*27;
-                cfoot.setText(""+eightsol+" "+"cubic foot");
+                cubicFoot.setText(""+eightsol+" ");
             }
         });
 
 
         //seven
-        cmilebtn.setOnClickListener(new View.OnClickListener() {
+        cubicMileBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String onein=cmile.getText().toString();
+                String onein=cubicMile.getText().toString();
                 double onevar=Double.parseDouble(onein);
                 //ccm    1
                 double onesol=onevar*4.1682*10000000*100000000;
-                ccm.setText(""+onesol+" "+"cubic centimeter");
+                cubicCentimeter.setText(""+onesol+" ");
 
                 //cm    2
                 double twosol=onevar*4.1682*1000000000;
-                cm.setText(""+twosol+" "+"cubic meter");
+                cubicMeter.setText(""+twosol+" ");
 
                 //cdm   3
                 double threesol=onevar*4.1682*10000000*100000;
-                cdm.setText(""+threesol+" "+"cubic decimeter");
+                cubicDecimeter.setText(""+threesol+" ");
 
                 //ckm    4
                 double foursol=onevar*4.16818183;
-                ckm.setText(""+foursol+" "+"cubic kilometer");
+                cubicKilometer.setText(""+foursol+" ");
 
                 //cinch   5
                 double fivesol=onevar*2.5436*1000000000*100000;
-                cinch.setText(""+fivesol+" "+"cubic inch");
+                cubicInch.setText(""+fivesol+" ");
 
                 //cyard    6
                 double sixsol=onevar*5.4518*1000000000;
-                cyard.setText(""+sixsol+" "+"cubic yard");
+                cubicYard.setText(""+sixsol+" ");
 
                 //cmile    7
                 double sevensol=onevar;
-                cmile.setText(""+sevensol+" "+"cubic mile");
+                cubicMile.setText(""+sevensol+" ");
 
                 //cfoot    8
                 double eightsol=onevar*1.4720*1000000*100000;
-                cfoot.setText(""+eightsol+" "+"cubic foot");
+                cubicFoot.setText(""+eightsol+" ");
             }
         });
 
 
         //eight
-        cfootbtn.setOnClickListener(new View.OnClickListener() {
+        cubicFootBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String onein=cfoot.getText().toString();
+                String onein=cubicFoot.getText().toString();
                 double onevar=Double.parseDouble(onein);
                 //ccm    1
                 double onesol=onevar*28316.8466;
-                ccm.setText(""+onesol+" "+"cubic centimeter");
+                cubicCentimeter.setText(""+onesol+" ");
 
                 //cm    2
                 double twosol=onevar*0.02831685;
-                cm.setText(""+twosol+" "+"cubic meter");
+                cubicMeter.setText(""+twosol+" ");
 
                 //cdm   3
                 double threesol=onevar*28.3168466;
-                cdm.setText(""+threesol+" "+"cubic decimeter");
+                cubicDecimeter.setText(""+threesol+" ");
 
                 //ckm    4
                 double foursol=onevar*2.8317*0.00000000001;
-                ckm.setText(""+foursol+" "+"cubic kilometer");
+                cubicKilometer.setText(""+foursol+" ");
 
                 //cinch   5
                 double fivesol=onevar*1728;
-                cinch.setText(""+fivesol+" "+"cubic inch");
+                cubicInch.setText(""+fivesol+" ");
 
                 //cyard    6
                 double sixsol=onevar*0.03703704;
-                cyard.setText(""+sixsol+" "+"cubic yard");
+                cubicYard.setText(""+sixsol+" ");
 
                 //cmile    7
                 double sevensol=onevar*6.7936*0.000000000001;
-                cmile.setText(""+sevensol+" "+"cubic mile");
+                cubicMile.setText(""+sevensol+" ");
 
                 //cfoot    8
                 double eightsol=onevar;
-                cfoot.setText(""+eightsol+" "+"cubic foot");
+                cubicFoot.setText(""+eightsol+" ");
             }
         });
     }

@@ -1,5 +1,7 @@
 package com.example.quicksolve;
 
+//99package com.example.quicksolve;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -7,17 +9,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.quicksolve.R;
+
 public class temp extends AppCompatActivity {
 
-    private EditText k;
-    private EditText f;
-    private EditText c;
-    private EditText r;
+    private EditText kelvin;
+    private EditText fahrenheit;
+    private EditText celsius;
+    private EditText rankine;
 
-    private Button kbtn;
-    private Button fbtn;
-    private Button cbtn;
-    private Button rbtn;
+    private Button kelvinBtn;
+    private Button fahrenheitBtn;
+    private Button celsiusBtn;
+    private Button rankineBtn;
 
 
 
@@ -27,23 +31,23 @@ public class temp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_temp);
 
-        k=findViewById(R.id.mile);
-        f=findViewById(R.id.cm);
-        c=findViewById(R.id.foot);
-        r=findViewById(R.id.millimeter);
+        kelvin=findViewById(R.id.kelvin);
+        fahrenheit=findViewById(R.id.fahreneit);
+        celsius=findViewById(R.id.celsius);
+        rankine=findViewById(R.id.rankine);
 
-        kbtn=findViewById(R.id.micrometerbtn);
-        fbtn=findViewById(R.id.cmbtn);
-        cbtn=findViewById(R.id.cbtn);
-        rbtn=findViewById(R.id.rbtn);
+        kelvinBtn=findViewById(R.id.kelvinBtn);
+        fahrenheitBtn=findViewById(R.id.fahrenheitBtn);
+        celsiusBtn=findViewById(R.id.celsiusBtn);
+        rankineBtn=findViewById(R.id.rankineBtn);
 
         //one
-        kbtn.setOnClickListener(new View.OnClickListener() {
+        kelvinBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 //kelvin
-                String onein=k.getText().toString();
+                String onein=kelvin.getText().toString();
 
 
                  double onevar = Double.parseDouble(onein);
@@ -51,33 +55,33 @@ public class temp extends AppCompatActivity {
                 //kelvin
 
                 double onesol=(double) onevar;
-                k.setText(""+onesol+" "+"Kelvin");
+                kelvin.setText(""+onesol+" ");
 
                 //fahrenheit
 
                 double twosol=(double) 1.8*(double)(onevar-273.15)+32;
-                f.setText(""+twosol+" "+"Fahrenheit");
+                fahrenheit.setText(""+twosol+" ");
 
                 //celsius
 
                 double threesol=onevar-273.15;
-                c.setText(""+threesol+" "+"Celsius");
+                celsius.setText(""+threesol+" ");
 
                 //rankine
 
                 double foursol=(double)onevar*(double)1.8;
-                r.setText(""+foursol+" "+"Rankine");
+                rankine.setText(""+foursol+" ");
             }
         });
 
 
         //two
-        fbtn.setOnClickListener(new View.OnClickListener() {
+        fahrenheitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 //fahrenheit
-                String onein=f.getText().toString();
+                String onein=fahrenheit.getText().toString();
 
 
                 double onevar = Double.parseDouble(onein);
@@ -85,32 +89,32 @@ public class temp extends AppCompatActivity {
                 //kelvin
 
                 double onesol= (double)(onevar-32)/(double)1.8+(double)273.15;
-                k.setText(""+onesol+" "+"Kelvin");
+                kelvin.setText(""+onesol+" ");
 
                 //fahrenheit
 
                 double twosol=(double) onevar;
-                f.setText(""+twosol+" "+"Fahrenheit");
+                fahrenheit.setText(""+twosol+" ");
 
                 //celsius
 
                 double threesol=((double) onevar-32)/(double) 1.8;
-                c.setText(""+threesol+" "+"Celsius");
+                celsius.setText(""+threesol+" ");
 
                 //rankine
 
                 double foursol=(double) onevar+(double) 459.67;
-                r.setText(""+foursol+" "+"Rankine");
+                rankine.setText(""+foursol+" ");
             }
         });
 
         //three
-        cbtn.setOnClickListener(new View.OnClickListener() {
+        celsiusBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 //kelvin
-                String onein=c.getText().toString();
+                String onein=celsius.getText().toString();
 
 
                 double onevar = Double.parseDouble(onein);
@@ -118,32 +122,32 @@ public class temp extends AppCompatActivity {
                 //kelvin
 
                 double onesol=(double)onevar+(double) 273.15;
-                k.setText(""+onesol+" "+"Kelvin");
+                kelvin.setText(""+onesol+" ");
 
                 //fahrenheit
 
                 double twosol=((double) onevar*1.8)+32;
-                f.setText(""+twosol+" "+"Fahrenheit");
+                fahrenheit.setText(""+twosol+" ");
 
                 //celsius
 
                 double threesol=(double) onevar;
-                c.setText(""+threesol+" "+"Celsius");
+                celsius.setText(""+threesol+" ");
 
                 //rankine
 
                 double foursol=((double) onevar+273.15)*1.8;
-                r.setText(""+foursol+" "+"Rankine");
+                rankine.setText(""+foursol+" ");
             }
         });
 
         //four
-        rbtn.setOnClickListener(new View.OnClickListener() {
+        rankineBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 //kelvin
-                String onein=r.getText().toString();
+                String onein=rankine.getText().toString();
 
 
                 double onevar = Double.parseDouble(onein);
@@ -151,22 +155,22 @@ public class temp extends AppCompatActivity {
                 //kelvin
 
                 double onesol=(double) onevar/1.8;
-                k.setText(""+onesol+" "+"Kelvin");
+                kelvin.setText(""+onesol+" ");
 
                 //fahrenheit
 
                 double twosol=(double) onevar-459.67;
-                f.setText(""+twosol+" "+"Fahrenheit");
+                fahrenheit.setText(""+twosol+" ");
 
                 //kelvin
 
                 double threesol=((double) onevar-491.67)/1.8;
-                c.setText(""+threesol+" "+"Celsius");
+                celsius.setText(""+threesol+" ");
 
                 //kelvin
 
                 double foursol=(double) onevar;
-                r.setText(""+foursol+" "+"Rankine");
+                rankine.setText(""+foursol+" ");
             }
         });
     }

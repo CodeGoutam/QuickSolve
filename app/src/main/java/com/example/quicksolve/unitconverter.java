@@ -1,54 +1,34 @@
 package com.example.quicksolve;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 
 public class unitconverter extends AppCompatActivity {
-    ImageView lengthimg;
-    ImageView tempimg;
-    ImageView volumeimg;
-    ImageView speedimg;
-    ImageView massimg;
-    ImageView areaimg;
-
-
-
-
-
-
-  private Button length ;
-    Button speed;
-     Button area;
-      Button temperature;
-    Button mass;
-      Button volume;
+    CardView lengthCard;
+    CardView temperatureCard;
+    CardView volumeCard;
+    CardView speedCard;
+    CardView massCard;
+    CardView areaCard;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_unitconverter);
 
-        lengthimg=findViewById(R.id.lengthimg);
-        areaimg=findViewById(R.id.areaimg);
-        tempimg=findViewById(R.id.tempimg);
-        volumeimg=findViewById(R.id.volumeimg);
-        speedimg=findViewById(R.id.speedimg);
-        massimg=findViewById(R.id.massimg);
+        lengthCard=findViewById(R.id.lengthCard);
+        areaCard=findViewById(R.id.areaCard);
+        temperatureCard=findViewById(R.id.temperatureCard);
+        volumeCard=findViewById(R.id.volumeCard);
+        speedCard=findViewById(R.id.speedCard);
+        massCard=findViewById(R.id.massCard);
 
 
 
-        length=findViewById(R.id.length);
-        speed=findViewById(R.id.speed);
-        area=findViewById(R.id.area);
-        temperature=findViewById(R.id.temperature);
-        mass=findViewById(R.id.mass);
-        volume=findViewById(R.id.volume);
-
-        length.setOnClickListener(new View.OnClickListener() {
+        lengthCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(unitconverter.this,length1.class);
@@ -56,7 +36,7 @@ public class unitconverter extends AppCompatActivity {
             }
         });
 
-        area.setOnClickListener(new View.OnClickListener() {
+        areaCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(unitconverter.this,area.class);
@@ -64,7 +44,7 @@ public class unitconverter extends AppCompatActivity {
             }
         });
 
-        temperature.setOnClickListener(new View.OnClickListener() {
+        temperatureCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -73,7 +53,7 @@ public class unitconverter extends AppCompatActivity {
             }
         });
 
-volume.setOnClickListener(new View.OnClickListener() {
+volumeCard.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
 
@@ -85,7 +65,7 @@ volume.setOnClickListener(new View.OnClickListener() {
     }
 });
 
-        mass.setOnClickListener(new View.OnClickListener() {
+        massCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -98,7 +78,7 @@ volume.setOnClickListener(new View.OnClickListener() {
         });
 
 
-        speed.setOnClickListener(new View.OnClickListener() {
+        speedCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 

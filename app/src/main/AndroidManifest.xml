@@ -14,46 +14,59 @@
         android:theme="@style/Theme.QuickSolve"
         tools:targetApi="31">
         <activity
-         android:parentActivityName=".unitconverter"
+            android:name=".unit_Converter_Index"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".speed"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Speed"
+            android:parentActivityName=".unitconverter" />
         <activity
             android:name=".Mass"
-            android:parentActivityName=".unitconverter"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Mass"
+            android:parentActivityName=".unitconverter" />
         <activity
             android:name=".volume"
-            android:parentActivityName=".unitconverter"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Volume"
+            android:parentActivityName=".unitconverter" />
         <activity
             android:name=".temp"
-            android:parentActivityName=".unitconverter"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Temperature"
+            android:parentActivityName=".unitconverter" />
         <activity
             android:name=".area"
-            android:parentActivityName=".unitconverter"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Area"
+            android:parentActivityName=".unitconverter" />
         <activity
             android:name=".length1"
-            android:parentActivityName=".unitconverter"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Length"
+            android:parentActivityName=".unitconverter" />
         <activity
             android:name=".length"
-            android:parentActivityName=".unitconverter"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".unitconverter" />
         <activity
             android:name=".unitconverter"
             android:exported="false"
-
             android:label="Unit Converter" />
         <activity
             android:name=".IndexActivity"
             android:exported="false"
-            android:parentActivityName=".unitconverter"
-            android:label="Index" />
+            android:label="Index"
+            android:parentActivityName=".unitconverter" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
+            android:noHistory="true"
             android:parentActivityName=".unitconverter"
             android:theme="@style/Theme.QuickSolve">
             <intent-filter>

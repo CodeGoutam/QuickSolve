@@ -5,39 +5,41 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+//import android.widget.EditText;
+
+import com.google.android.material.textfield.TextInputEditText;
 
 public class area extends AppCompatActivity {
-    private EditText sqcm ;
-    private EditText  sqm;
-    private EditText  sqkm;
-    private EditText  sqmm;
-    private EditText  h;
+    private TextInputEditText sqcm ;
+    private TextInputEditText  sqm;
+    private TextInputEditText  sqkm;
+    private TextInputEditText sqmm;
+    private TextInputEditText h;
 
-    private Button sqcmbtn;
-    private Button sqmbtn;
-    private Button sqkmbtn;
-    private Button sqmmbtn;
-    private Button hbtn;
+    private Button sqcmBtn;
+    private Button sqmBtn;
+    private Button sqkmBtn;
+    private Button sqmmBtn;
+    private Button hBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_area);
 
-        sqcm=findViewById(R.id.mile);
-        sqm=findViewById(R.id.foot);
-        sqkm=findViewById(R.id.millimeter);
-        sqmm=findViewById(R.id.cm);
-        h=findViewById(R.id.kmbtn);
+        sqcm=(TextInputEditText)findViewById(R.id.sqcm);
+        sqm=(TextInputEditText)findViewById(R.id.sqm);
+        sqkm=(TextInputEditText)findViewById(R.id.sqkm);
+        sqmm=(TextInputEditText)findViewById(R.id.sqmm);
+        h=(TextInputEditText)findViewById(R.id.h);
 
-        sqcmbtn=findViewById(R.id.sqcmbtn);
-        sqmbtn=findViewById(R.id.meterbtn);
-        sqkmbtn=findViewById(R.id.micrometerbtn);
-        sqmmbtn=findViewById(R.id.cmbtn);
-        hbtn=findViewById(R.id.hbtn);
+        sqcmBtn=findViewById(R.id.sqcmBtn);
+        sqmBtn=findViewById(R.id.sqmBtn);
+        sqmmBtn=findViewById(R.id.sqmmBtn);
+        sqkmBtn=findViewById(R.id.sqkmBtn);
+        hBtn=findViewById(R.id.hBtn);
 
         //sqcmbtn one1
-        sqcmbtn.setOnClickListener(new View.OnClickListener() {
+        sqcmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String onein=sqcm.getText().toString();
@@ -46,25 +48,25 @@ public class area extends AppCompatActivity {
                 double onevar=Double.parseDouble(onein);
 //cm
                 double onesol=onevar*1;
-                sqcm.setText(""+onesol+" "+"sq. cm");
+                sqcm.setText(""+onesol+" ");
 //meter
                 double twosol=onevar*(double) 0.0001;
-                sqm.setText(""+twosol+" "+"sq. meter");
+                sqm.setText(""+twosol+" ");
 //km
                 double threesol=(double) onevar*(double)0.0000000001 ;
-                sqkm.setText(""+(double)threesol+" "+"sq. km");
+                sqkm.setText(""+(double)threesol+" ");
 //mm
                 double foursol=(double) onevar*(double)0.155 ;
-                sqmm.setText(""+(double)foursol+" "+"sq. mm");
+                sqmm.setText(""+(double)foursol+" ");
 //h
                 double fivesol=(double) onevar*(double)100 ;
-                h.setText(""+(double)fivesol+" "+"hectare");
+                h.setText(""+(double)fivesol+" ");
             }
         });
 
 
         //sqmbtn two2
-        sqmbtn.setOnClickListener(new View.OnClickListener() {
+        sqmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String onein=sqm.getText().toString();
@@ -73,24 +75,24 @@ public class area extends AppCompatActivity {
                 double onevar=Double.parseDouble(onein);
 //cm
                 double onesol=onevar*10000;
-                sqcm.setText(""+onesol+" "+"sq. cm");
+                sqcm.setText(""+onesol+" ");
 //meter
                 double twosol=onevar*(double) 1;
-                sqm.setText(""+twosol+" "+"sq. meter");
+                sqm.setText(""+twosol+" ");
 //km
                 double threesol=(double) onevar*(double)0.000001 ;
-                sqkm.setText(""+(double)threesol+" "+"sq. km");
+                sqkm.setText(""+(double)threesol+" ");
 //mm
                 double foursol=(double) onevar*(double)1000000 ;
-                sqmm.setText(""+(double)foursol+" "+"sq. mm");
+                sqmm.setText(""+(double)foursol+" ");
 //h
                 double fivesol=(double) onevar*(double)0.0001 ;
-                h.setText(""+(double)fivesol+" "+"hectare");
+                h.setText(""+(double)fivesol+" ");
             }
         });
 
         //sqkmbtn 3
-        sqkmbtn.setOnClickListener(new View.OnClickListener() {
+        sqkmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String onein=sqkm.getText().toString();
@@ -99,24 +101,24 @@ public class area extends AppCompatActivity {
                 double onevar=Double.parseDouble(onein);
 //cm
                 double onesol=onevar*100000*100000;
-                sqcm.setText(""+onesol+" "+"sq. cm");
+                sqcm.setText(""+onesol+" ");
 //meter
                 double twosol=onevar*(double) 1000000;
-                sqm.setText(""+twosol+" "+"sq. meter");
+                sqm.setText(""+twosol+" ");
 //km
                 double threesol=(double) onevar*(double)1 ;
-                sqkm.setText(""+(double)threesol+" "+"sq. km");
+                sqkm.setText(""+(double)threesol+" ");
 //mm
                 double foursol=(double) onevar*(double)1000000*1000000 ;
-                sqmm.setText(""+(double)foursol+" "+"sq. mm");
+                sqmm.setText(""+(double)foursol+" ");
 //h
                 double fivesol=(double) onevar*(double)100 ;
-                h.setText(""+(double)fivesol+" "+"hectare");
+                h.setText(""+(double)fivesol+" ");
             }
         });
 
         //sqmmbtn 4
-        sqmmbtn.setOnClickListener(new View.OnClickListener() {
+        sqmmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String onein=sqmm.getText().toString();
@@ -125,24 +127,24 @@ public class area extends AppCompatActivity {
                 double onevar=Double.parseDouble(onein);
 //cm
                 double onesol=onevar*(double)0.01;
-                sqcm.setText(""+onesol+" "+"sq. cm");
+                sqcm.setText(""+onesol+" ");
 //meter
                 double twosol=onevar*(double)0.000001 ;
-                sqm.setText(""+twosol+" "+"sq. meter");
+                sqm.setText(""+twosol+" ");
 //km
                 double threesol=(double) onevar*(double)0.000000000001 ;
-                sqkm.setText(""+(double)threesol+" "+"sq. km");
+                sqkm.setText(""+(double)threesol+" ");
 //mm
                 double foursol=(double) onevar*(double)1 ;
-                sqmm.setText(""+(double)foursol+" "+"sq. mm");
+                sqmm.setText(""+(double)foursol+" ");
 //h
                 double fivesol=(double) onevar*(double)0.0000000001 ;
-                h.setText(""+(double)fivesol+" "+"hectare");
+                h.setText(""+(double)fivesol+" ");
             }
         });
 
         //hbtn 5
-        hbtn.setOnClickListener(new View.OnClickListener() {
+        hBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String onein=h.getText().toString();
@@ -151,19 +153,19 @@ public class area extends AppCompatActivity {
                 double onevar=Double.parseDouble(onein);
 //cm
                 double onesol=onevar*100000000;
-                sqcm.setText(""+onesol+" "+"sq. cm");
+                sqcm.setText(""+onesol+" ");
 //meter
                 double twosol=onevar*(double) 10000;
-                sqm.setText(""+twosol+" "+"sq. meter");
+                sqm.setText(""+twosol+" ");
 //km
                 double threesol=(double) onevar*(double)0.01 ;
-                sqkm.setText(""+(double)threesol+" "+"sq. km");
+                sqkm.setText(""+(double)threesol+" ");
 //mm
                 double foursol=(double) onevar*(double)100000*100000 ;
-                sqmm.setText(""+(double)foursol+" "+"sq. mm");
+                sqmm.setText(""+(double)foursol+" ");
 //h
                 double fivesol=(double) onevar*(double)1 ;
-                h.setText(""+(double)fivesol+" "+"hectare");
+                h.setText(""+(double)fivesol+" ");
             }
         });
 

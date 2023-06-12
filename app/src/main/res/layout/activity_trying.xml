@@ -39,7 +39,7 @@
             android:text="Button" />
 
         <EditText
-            android:id="@+id/cm"
+            android:id="@+id/sqcm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -47,7 +47,7 @@
             android:text="Name" />
 
         <Button
-            android:id="@+id/cmbtn"
+            android:id="@+id/sqcmBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Button" />
